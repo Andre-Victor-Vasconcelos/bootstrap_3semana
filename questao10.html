@@ -9,6 +9,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Questão 10</title>
+    <style>
+        @media (max-width: 991px) {
+           .col-4{
+               width: 100%;
+           }
+      
+       }
+
+       @media (min-width: 992px) {
+           .row{
+               width: 66.67%;
+               margin: 0 auto;
+
+           }
+        
+       }
+
+       @media (min-width: 1200px) {
+           .row{
+               width: 50%;
+               margin: 0 auto;
+
+           }
+      
+       }
+   </style>
+
 </head>
 
 <body>
@@ -25,11 +52,76 @@
         </ul>
         <p class="lead">*Os campos válidos devem ter valores fictícios preenchidos nos campos.</p>
         <hr>
+        <div class="container">
+            <form>
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <label for="User"> Nome</label>
+                    <input type="text" class="form-control is-valid" value="Fulano" >
+                    <div class="valid-feedback">
+                        Tudo certo!
+                      </div>
+                  </div>
+    
+                  <div class="col-4">
+                    <label for="User"> CPF</label>
+                    <input type="text" class="form-control is-invalid" value="000.000.000-00" >
+                    <div class="invalid-feedback">
+                        Campo obrigatório
+                      </div>
+                  </div>
+    
+                  <div class="col-4">
+                    <label for="User"> Data de nascimento</label>
+                    <input type="date" class="form-control is-valid" value="00/00/0000" >
+                    <div class="valid-feedback">
+                        Tudo certo!
+                      </div>
+                  </div>
+    
+    
+                  <div class="col-4">
+                    <label for="User"> Sexo</label>
+                    <select id="inputEstado" class="form-control is-invalid" value="Masculino">
+                        <option selected>Escolher...</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>n/a</option>
+                      </select>          
+                      <div class="invalid-feedback">
+                        Campo obrigatório
+                      </div>
+                    </div>
+    
+                  <div class="col-12 mb-3">
+                    <label for="User"> Endereço Completo</label>
+                    <input style="height: 200%;" type="text" class="form-control is-valid" value="Rua abc, n°123">
+                  </div>
+                  <div class="valid-feedback">
+                    Tudo certo!
+                  </div>
+    
+                </div>
+            
+    
+              </form>
+              <div style="margin-left: 30%; margin-top: 12%;">
+        
+                <div class="form-group form-switch">
+                    <input type="checkbox" class="form-check-input " id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Lembrar de mim</label>
+                  </div>
+                  <button type="submit " class="btn btn-primary form-switch m-2">Entrar</button>
+                  <a href="#">
+                      <p>Esqueci minha  senha</p>
+    
+                  </a>
+    
+                  <a href="#">
+                      <p>Quero me cadastrar</p>
+                  </a>
     </div>
-    <!-- FAZER AQUI -->
-    <div class="container">
-
-    </div>
+        </div>
 </body>
 
 </html>
